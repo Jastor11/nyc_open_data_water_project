@@ -1,0 +1,24 @@
+.Population {
+  width: 100vw;
+  padding: 2vmin 2rem;
+  font-size: 16px;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  transform: translateY(-50px)
+}
+.Population h1 {
+  margin: 0;
+}
+.Population__info {
+  transform: translateY(130px);
+  max-width: 45vw;
+  padding: 1rem 2rem;
+  height: 330px;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(6px + 2vmin);
+  color: white;
+}

@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import Population from './components/Population/Population'
+import WaterConsumption from './components/WaterConsumption/WaterConsumption'
+import WaterByBorough from './components/WaterByBorough/WaterByBorough'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header>
+        <h1>💧Liquid NYC</h1>
+        <h4>Everything you wanted to know about water in New York City</h4>
       </header>
+      <main>
+        <Population />
+        <WaterConsumption />
+        <h1 className="App__section-title">By Borough Breakdown</h1>
+        <WaterByBorough />
+      </main>
+      <footer>
+
+      </footer>
     </div>
   );
 }
